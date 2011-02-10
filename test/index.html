@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../lib/jquery-1.3.2.js"></script>
+<link rel="stylesheet" href="qunit/qunit.css" type="text/css" media="screen" />
+<script type="text/javascript" src="qunit/qunit.js"></script>
+<script src="../src/jquery.i18n.js"></script>
+</head>
+<body>
+  <h1 id="qunit-header">JS Tests</h1>
+  <h2 id="qunit-banner"></h2>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+
+<script>
+var tests = {
+  CoreTests:         "core.js",
+  CurrencyTests:     "currencies.js"
+};
+
+for(var key in tests) {
+  document.writeln('<scr'+'ipt type="text/javascript" src="'+tests[key]+'"></scr'+'ipt>');
+}
+</script>
+
+</body>
+</html>

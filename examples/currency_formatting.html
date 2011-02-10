@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../lib/jquery-1.3.2.js"></script>
+<script src="../src/jquery.i18n.js"></script>
+</head>
+<body>
+<h1>Test</h1>
+<h3>German</h3>
+<ul id="german">
+  <li><span class="price" currency="EUR" amount="1234.56"></span>
+  <li><span class="price" currency="CHF" amount="1234.56"></span>
+  <li><span class="price" currency="USD" amount="12345678.90"></span>
+  <li><span class="price" currency="GBP" amount="12345678.90"></span>
+  <li><span class="price" currency="JPY" amount="12345678"></span>
+</ul>
+<h3>English</h3>
+<ul id="english">
+  <li><span class="price" currency="EUR" amount="1234.56"></span>
+  <li><span class="price" currency="CHF" amount="1234.56"></span>
+  <li><span class="price" currency="USD" amount="12345678.90"></span>
+  <li><span class="price" currency="GBP" amount="12345678.90"></span>
+  <li><span class="price" currency="JPY" amount="12345678"></span>
+</ul>
+<h3>Swiss</h3>
+<ul id="swiss">
+  <li><span class="price" currency="EUR" amount="1234.56"></span>
+  <li><span class="price" currency="CHF" amount="1234.56"></span>
+  <li><span class="price" currency="USD" amount="12345678.90"></span>
+  <li><span class="price" currency="GBP" amount="12345678.90"></span>
+  <li><span class="price" currency="JPY" amount="12345678"></span>
+</ul>
+<h3>Japan</h3>
+<ul id="japan">
+  <li><span class="price" currency="EUR" amount="1234.56"></span>
+  <li><span class="price" currency="CHF" amount="1234.56"></span>
+  <li><span class="price" currency="USD" amount="12345678.90"></span>
+  <li><span class="price" currency="GBP" amount="12345678.90"></span>
+  <li><span class="price" currency="JPY" amount="12345678"></span>
+</ul>
+<script>
+  $("#german .price").formatCurrency({locale: 'de_DE'});
+  $("#english .price").formatCurrency({locale: 'en_US'});
+  $("#swiss .price").formatCurrency({locale: 'de_CH'});
+  $("#japan .price").formatCurrency({locale: 'ja'});
+</script>
+</body>
+</html>
